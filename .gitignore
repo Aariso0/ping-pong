@@ -14,3 +14,6 @@ build/
 # OS junk
 .DS_Store
 Thumbs.db
+
+# ignore folder
+ignore/
