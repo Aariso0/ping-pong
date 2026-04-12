@@ -1,11 +1,11 @@
-# Raylib Game
+# Ping pong Game
 
-Simple game built using Raylib in C++.
+Simple ping pong game built using Raylib in C++.
 
 ## Controls
 - W / S / Up arrow / Down arrow: Move
 - ESC: Exit
-- ENTER: Proceed 
+- ENTER: To Proceed 
 
 ## Build
 g++ main.cpp -o game -lraylib -lopengl32 -lgdi32 -lwinmm
