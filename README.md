@@ -10,6 +10,10 @@ Simple game built using Raylib in C++.
 ## Build
 g++ main.cpp -o game -lraylib -lopengl32 -lgdi32 -lwinmm
 
+## requirements
+- Raylib installed
+- g++ compiler
+
 ### stuff
 
 if you have downloaded the repository you now know it has no music. so if you like change it please go right ahead I will gladley accept PR request if it's good of course.
