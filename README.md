@@ -12,4 +12,4 @@ g++ main.cpp -o game -lraylib -lopengl32 -lgdi32 -lwinmm
 
 ### stuff
 
-if you have downloaded the repository you now know it has no music. so if you like change it please go right ahead I will gladley accept PR request if it's good.
+if you have downloaded the repository you now know it has no music. so if you like change it please go right ahead I will gladley accept PR request if it's good of course.
