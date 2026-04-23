@@ -5,6 +5,15 @@ class Ball
 {
     public:
     float x,y,speedx,speedy,radius;
+
+    Ball(float x,float y,float speedx,float speedy,float radius)
+    {
+        this->x=x;
+        this->y=y;
+        this->speedx=speedx;
+        this->speedy=speedy;
+        this->radius=radius;
+    }
     
     void draw(){
         DrawCircle(x,y,radius,YELLOW);
@@ -24,6 +33,16 @@ class Box{
     public:
     float x,y,speedy,width,height;
     int score;
+
+    Box(float x,float y,float speedy,float width,float height,int score)
+    {
+        this->x=x;
+        this->y=y;
+        this->speedy=speedy;
+        this->width=width;
+        this->height=height;
+        this->score=score;
+    }
     
     void draw()
     {
@@ -49,23 +68,13 @@ int main()
     
     
     
-    Ball ball;
-    ball.x=screen_width/2;
-    ball.y=screen_height/2;
-    ball.radius=20;
+    Ball ball(screen_width/2,screen_height/2,0,0,20);
+  
     Ball no_velocity_center=ball;
     
     
-    Box box1,box2;
-    box1.score=0,box2.score=0;
-    box1.x=10;
-    box1.width=20;
-    box1.height=120;
-    box1.y=screen_height/2-box1.height/2;
-    box2.width=20;
-    box2.x=screen_width-box2.width-10;
-    box2.height=120;
-    box2.y=screen_height/2-box2.height/2;
+    Box box1(10,screen_height/2-box1.height/2,0,20,120,0),box2(screen_width-box2.width-10,screen_height/2-box2.height/2,0,20,120,0);
+   
     
     const char* greeting = "WELCOME!";
     int text_width1=MeasureText(greeting,100),text_width2=MeasureText("PLEASE SELECT YOUR DIFFICULTY",50);
